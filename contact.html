@@ -16,4 +16,31 @@
         <b><a href="home.html">Home</a> &nbsp; <a href="gamesandevents.html">Games and Events</a> &nbsp; <a
             href="store.html">Store</a> &nbsp; <a href="menu.html">Menu</a></b>
     </nav>
+
+    <form>
+        <ul>
+            <li>
+                <label for="name">Name:</label>
+                <input type="text" id="fullName" name="fullName" required>
+            </li>
+            <li>
+                <label for="mail">Email:</label>
+                <input type="email" id="mail" name="mail" required>
+            </li>
+            <li>
+                <label for="message">Message:</label>
+                <input type="text" id="message" name="message">
+            </li>
+            <li>
+                <label for="event">Event:</label>
+                <select id="event" name="event">
+                    <option value="none" selected>None</option>
+                    <option value="D&D">D&D Night</option>
+                    <option value="Commander">Commander and Pizza</option>
+                    <option value="FNM">FNM</option>
+                    <option value="Draft">MTG Draft</option>
+                </select>
+            </li>
+        </ul>
+    </form>
 </body>
