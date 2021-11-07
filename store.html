@@ -9,15 +9,52 @@
 </head>
 
 <body>
-    <header>
-        <a href="home.html"><img src="images/G&G_Logo.png" alt="Games and Grounds" width="100"></a>
-    </header>
-    <nav>
-        <b><a href="home.html">Home</a> &nbsp; <a href="games-and-events.html">Games and Events</a> &nbsp; <a
-            href="store.html">Store</a> &nbsp; <a href="menu.html">Menu</a> &nbsp;
-            <a href="contact.html">Contact Us</a></b>
-    </nav>
-    <footer>
-        <!--Copy from home page after footer is done-->
-    </footer>
+  <header>
+    <a href="home.html"><img src="images/G&G_Logo.png" alt="Games and Grounds" width="100"></a>
+  </header>
+  <nav>
+    <b><a href="home.html">Home</a> &nbsp; <a href="games-and-events.html">Games and Events</a> &nbsp; <a
+      href="store.html">Store</a> &nbsp; <a href="menu.html">Menu</a> &nbsp;
+      <a href="contact.html">Contact Us</a></b>
+  </nav>
+  <main>
+    <h1>Products For Sale</h1>
+    
+    <!--Tabs for store sections-->
+    <div class="tab">
+      <button class="tablinks" onclick="openStore(event,'Board')">Board Games</button>
+      <button class="tablinks" onclick="openStore(event,'Cards')">MTG Cards</button>
+      <button class="tablinks" onclick="openStore(event,'Other')">Other Game Products</button>
+    </div>
+    
+    <div id="Board" class="tabcontent">
+      <h2>Board Games</h2>
+    </div>
+    <div id="Cards" class="tabcontent">
+      <h2>MTG Cards</h2>
+    </div>
+    <div id="Other" class="tabcontent">
+      
+    </div>
+    
+    <!--Javascript to manage tabs (from W3Schools.com)-->
+    <script>
+      function openStore(evt, tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "block";
+        evt.currentTarget.className += " active";
+      }
+      </script>
+  </main>
+  <footer>
+    <!--Copy from home page after footer is done-->
+  </footer>
 </body>
