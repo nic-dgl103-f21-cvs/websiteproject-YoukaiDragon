@@ -1,3 +1,9 @@
+/*Size text*/
+html { font-size: 62.5%; }
+body { font-size: 1.6rem; }
+
+
+
 /*For store page tabs*/
 .tab {
   overflow: hidden;
