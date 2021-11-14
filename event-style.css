@@ -1,0 +1,39 @@
+h1, main > h2 {
+  text-align: center;
+}
+
+h2, h3 {
+  padding-left: 60px;
+}
+
+.events {
+  display: flex;
+  justify-content: center; 
+}
+
+.schedule {
+  flex-basis: 40%;
+}
+
+ul {
+  padding-left: 60px;
+}
+
+.register {
+  padding-left: 10%;
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
+.register a {
+  text-decoration: none;
+}
+
+.register a:hover {
+  color: white;
+}
+
+.house-games {
+  display: flex;
+  justify-content: center;
+}
