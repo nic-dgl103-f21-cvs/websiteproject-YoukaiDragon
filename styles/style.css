@@ -42,9 +42,24 @@ nav a:hover {
 footer {
   background-color: white;
   display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.facebook, .contact {
+  align-self: center;
 }
 
 #map {
-  width: 300px;
+  width: 400px;
   height: 250px;
 }
