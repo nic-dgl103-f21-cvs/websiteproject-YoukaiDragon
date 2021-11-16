@@ -1,6 +1,11 @@
 /*Size text*/
 html { font-size: 62.5%; }
-body { font-size: 1.6rem; }
+body { 
+  font-size: 1.6rem;
+  font-family: Arimo, sans-serif; 
+}
+
+h1, h2, h3 { font-family: Volkhov, serif; }
 
 /*Full Website Rules*/
 body { 
