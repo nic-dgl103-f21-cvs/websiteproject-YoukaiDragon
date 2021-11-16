@@ -26,10 +26,6 @@ ul {
   font-weight: bold;
 }
 
-.register a {
-  text-decoration: none;
-}
-
 .register a:hover {
   color: white;
 }

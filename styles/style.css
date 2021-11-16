@@ -37,6 +37,9 @@ nav {
 
 nav a {
   padding: 40px;
+}
+
+a {
   text-decoration: none;
 }
 
