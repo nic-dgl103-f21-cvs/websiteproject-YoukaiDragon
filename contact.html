@@ -24,7 +24,7 @@
     </nav>
   </header>
 
-  <form>
+  <form method="POST">
     <ul>
       <li>
         <label for="name">Name:</label>
@@ -42,11 +42,17 @@
         <label for="event">Event:</label>
         <select id="event" name="event">
           <option value="none" selected>None</option>
-          <option value="D&D">D&D Night</option>
-          <option value="Commander">Commander and Pizza</option>
-          <option value="FNM">FNM</option>
-          <option value="Draft">MTG Draft</option>
+          <option value="D&D">D&D & Pizza Night (pizza: $4.99)</option>
+          <option value="Commander">Commander & Pizza night (seat: $4.20 pizza: $4.99)</option>
+          <option value="FNM">FNM ($4.20)</option>
+          <option value="Draft">MTG Draft ($19.99)</option>
         </select>
+      </li>
+      <li>
+        <p>(For pizza night events, please include if you want pizza in the message box)</p>
+      </li>
+      <li>
+        <button type="submit">Submit</button>
       </li>
     </ul>
   </form>

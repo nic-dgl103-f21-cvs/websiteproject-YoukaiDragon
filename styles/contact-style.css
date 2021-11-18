@@ -7,10 +7,15 @@ ul {
 label {
     display: inline-block;
     width: 70px;
+    text-align: end;
 }
 
 .message label {
     vertical-align: top;
+}
+
+textarea {
+  resize: none;
 }
 
 footer {
