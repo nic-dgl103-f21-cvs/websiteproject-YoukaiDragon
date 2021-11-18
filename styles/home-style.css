@@ -1,0 +1,12 @@
+.intro {
+    text-align: center;
+}
+
+.store h2 {
+    text-align: center;
+}
+
+.store div {
+    display: flex;
+    justify-content: space-around;
+}

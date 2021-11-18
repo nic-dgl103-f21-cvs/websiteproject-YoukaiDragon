@@ -5,15 +5,18 @@
 <head>
   <title>Games and Grounds Store</title>
   <meta charset="utf-8">
-  <link rel="stylesheet" href="style.css">
-  <link rel="stylesheet" href="store-style.css">
+  <link rel="stylesheet" href="styles/style.css">
+  <link rel="stylesheet" href="styles/store-style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Arimo&family=Volkhov:wght@700&display=swap" rel="stylesheet">
 </head>
 
 <body>
   <header>
-    <a href="home.html"><img src="images/G&G_Logo.png" alt="Games and Grounds" width="100"></a>
+    <a href="index.html"><img src="images/G&G_Logo.png" alt="Games and Grounds" width="100"></a>
     <nav>
-      <a href="home.html">Home</a>
+      <a href="index.html">Home</a>
       <a href="games-and-events.html">Games and Events</a>
       <a href="store.html">Store</a>
       <a href="menu.html">Menu</a>
@@ -23,7 +26,7 @@
 
   <main>
     <h1>Featured Products</h1>
-    <section id="featured">
+    <div id="featured">
       <figure>
         <img src="images/Waterdeep.JPG" alt="Lords of Waterdeep" width=100>
         <figcaption>Lords of Waterdeep $50.99</figcaption>
@@ -41,7 +44,7 @@
         <figcaption>Icons of the Realms Tomb of Annihliation:
           Tombs and Traps Premium Set $50.00</figcaption>
       </figure>
-    </section>
+    </div>
 
     <!--Tabs for store sections-->
     <div class="tab">
@@ -158,9 +161,59 @@
         document.getElementById(tabName).style.display = "flex";
         evt.currentTarget.className += " active";
       }
+
+      function openDefault(tabName) {
+        var i, tabcontent, tablinks;
+        tabcontent = document.getElementsByClassName("tabcontent");
+        for (i = 0; i < tabcontent.length; i++) {
+          tabcontent[i].style.display = "none";
+        }
+        tablinks = document.getElementsByClassName("tablinks");
+        for (i = 0; i < tablinks.length; i++) {
+          tablinks[i].className = tablinks[i].className.replace(" active", "");
+        }
+        document.getElementById(tabName).style.display = "flex";
+      }
     </script>
   </main>
   <footer>
-    <!--Copy from home page after footer is done-->
+    <div class="footer-nav">
+      <a href="index.html">Home</a>
+      <a href="games-and-events.html">Games and Events</a>
+      <a href="store.html">Store</a>
+      <a href="menu.html">Menu</a>
+      <a href="contact.html">Contact Us</a>
+    </div>
+
+    <a class="facebook" href="https://www.facebook.com/GamesandGrounds/">facebook</a>
+
+    <!--google map embed-->
+    <iframe id="map"
+      src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5162.161014972256!2d-124.9996989788694!3d49.69045672431574!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x548813f31559e059%3A0xfda1aad411aa1df9!2sGames%20And%20Grounds%20Coffee%20House!5e0!3m2!1sen!2sca!4v1637083609676!5m2!1sen!2sca"
+      width="300" height="250" allowfullscreen="" loading="lazy"></iframe>
+    <div class="contact">
+      <p>#103-576 England Avenue Courtenay, BC, Canada</p>
+      <p>V9N 2N3</p>
+      <p>(250)871-1171</p>
+      <p>gamesandgrounds@gmail.com</p>
+    </div>
   </footer>
+
+  <script>
+    //Open apropriate tab if user arrived via homepage store links
+    if (window.location.hash === "#board") {
+      openDefault('Board');
+    } else if (window.location.hash === "#cards") {
+      openDefault('Cards');
+    } else if (window.location.hash === "#other") {
+      openDefault('Other');
+    }
+
+    //Remove hash from address
+    var loc = window.location;
+    if ("pushState" in history) {
+      history.pushState("", document.title, loc.pathname + loc.search);
+      loc.hash = "";
+  }
+  </script>
 </body>

@@ -17,16 +17,13 @@ h2, h3 {
 
 ul {
   padding-left: 60px;
+  columns: 2;
 }
 
 .register {
   padding-left: 10%;
   font-size: 2.6rem;
   font-weight: bold;
-}
-
-.register a {
-  text-decoration: none;
 }
 
 .register a:hover {

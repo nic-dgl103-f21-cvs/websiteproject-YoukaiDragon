@@ -69,7 +69,7 @@ h2 {
   margin: 0 auto;
   border: 1px solid #ccc;
   border-top: none;
-  max-height: 500px;
+  max-height: 1000px;
   overflow: auto;
   flex-wrap: wrap;
   justify-content: flex-start;

@@ -1,6 +1,11 @@
 /*Size text*/
 html { font-size: 62.5%; }
-body { font-size: 1.6rem; }
+body { 
+  font-size: 1.6rem;
+  font-family: Arimo, sans-serif; 
+}
+
+h1, h2, h3 { font-family: Volkhov, serif; }
 
 /*Full Website Rules*/
 body { 
@@ -32,9 +37,37 @@ nav {
 
 nav a {
   padding: 40px;
+}
+
+a {
   text-decoration: none;
 }
 
 nav a:hover {
   color: orange;
+}
+
+footer {
+  background-color: white;
+  display: flex;
+  justify-content: space-around;
+}
+
+.footer-nav {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
+
+footer a {
+  text-decoration: none;
+}
+
+.facebook, .contact {
+  align-self: center;
+}
+
+#map {
+  width: 400px;
+  height: 250px;
 }

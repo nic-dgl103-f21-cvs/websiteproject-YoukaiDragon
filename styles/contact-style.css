@@ -1,0 +1,18 @@
+ul {
+    margin-top: 30px;
+    list-style-type: none;
+}
+
+/*Set labels to fixed width to vertically align input fields*/
+label {
+    display: inline-block;
+    width: 70px;
+}
+
+.message label {
+    vertical-align: top;
+}
+
+footer {
+    margin-top: 300px;
+}
