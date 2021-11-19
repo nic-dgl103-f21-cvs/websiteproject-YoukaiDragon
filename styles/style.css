@@ -50,6 +50,7 @@ nav a:hover {
 footer {
   background-color: white;
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-around;
 }
 
@@ -68,6 +69,6 @@ footer a {
 }
 
 #map {
-  width: 400px;
-  height: 250px;
+  width: 250px;
+  height: 150px;
 }

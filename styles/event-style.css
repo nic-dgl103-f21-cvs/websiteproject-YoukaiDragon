@@ -15,7 +15,11 @@ h2, h3 {
   flex-basis: 40%;
 }
 
-ul {
+.schedule p {
+  text-align: center;
+}
+
+.house-games ul {
   padding-left: 60px;
   columns: 2;
 }
@@ -33,4 +37,15 @@ ul {
 .house-games {
   display: flex;
   justify-content: center;
+}
+
+/*For responsive Layout*/
+@media (max-width: 480px) {
+  .events, .house-games {
+    flex-flow: column;
+  }
+  
+  footer {
+    flex-direction: column;
+  }
 }
