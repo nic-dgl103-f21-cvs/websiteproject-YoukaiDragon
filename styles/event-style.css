@@ -40,7 +40,7 @@ h2, h3 {
 }
 
 /*For responsive Layout*/
-@media (max-width: 480px) {
+@media (max-width: 650px) {
   .events, .house-games {
     flex-flow: column;
   }

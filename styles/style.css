@@ -21,22 +21,28 @@ header {
   align-items: center;
 }
 
-header a img {width: 80px;}
-
 header nav {
-  flex-basis: 90%;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
-nav {
+header a img {width: 100px;}
+
+nav ul {
   display: flex;
-  justify-content: space-around;
-  align-items: center;
-  font-size: 2rem;
-  font-weight: bold;
+  flex-flow: row wrap;
+  list-style-type: none;
+}
+
+.show-items {
+  display: flex;
 }
 
 nav a {
   padding: 40px;
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 a {
@@ -45,6 +51,16 @@ a {
 
 nav a:hover {
   color: orange;
+}
+
+/*hide icons for responsive nav bar by default*/
+.toggle, .menu-label {
+  display: none;
+}
+
+.menu-label {
+  font-size: 2rem;
+  font-weight: bold;
 }
 
 footer {
@@ -71,4 +87,29 @@ footer a {
 #map {
   width: 250px;
   height: 150px;
+}
+
+/*For responsive nav bar*/
+@media (max-width: 650px) {
+  nav .toggle, nav .menu-label {
+    display: flex;
+    align-self: center;
+  }
+
+  nav .toggle {
+    position: absolute;
+    margin-left: 55%;
+    cursor: pointer;
+  }
+
+  nav ul {
+    display: none;
+    flex-direction: column;
+    justify-content: flex-end;
+  }
+
+  #nav-items a {
+    padding: 0;
+    font-size: 1.65rem;
+  }
 }
