@@ -12,6 +12,11 @@ h1 {
   justify-content: center;
 }
 
+caption {
+  font-size: 2.6rem;
+  font-weight: bold;
+}
+
 .menu section { padding: 0 1%; }
 
 .note {
