@@ -2,7 +2,7 @@
     text-align: center;
 }
 
-.links {
+.links-nostore {
   width: 80%;
   margin: 0 auto;
   display: flex;
@@ -10,19 +10,49 @@
   justify-content: center;
 }
 
-.links div {
+.links-nostore div {
   flex-basis: 50%;
 }
 
-.links h2, .links h3 {
+.links-nostore h2, .links h3 {
   text-align: center;
 }
 
-.store h2 {
+.links-store div {
+  display: flex;
+  justify-content: space-around;
+}
+
+.links-store div div {
+  margin: 20px;
+}
+
+.links-store h2 {
     text-align: center;
 }
 
-.store div {
-    display: flex;
-    justify-content: space-around;
+/*position store links above their respective images*/
+.links-store h3 {
+  position: relative;
+  color: rgb(255, 255, 255);
+}
+
+.links-store img {
+  width: 100%;
+  height: auto;
+  position: relative;
+  right: 12%;
+  z-index: -1;
+}
+
+.store-boardgames h3 {
+  left: 130%;
+}
+
+.store-cards h3 {
+  left: 90%;
+}
+
+.store-other h3 {
+  left: 75%;
 }
