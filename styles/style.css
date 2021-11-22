@@ -119,6 +119,11 @@ footer a {
     flex-direction: column;
   }
 
+  iframe {
+    margin-top: 10px;
+    align-self: center;
+  }
+
   .facebook {
     align-self: flex-end;
   }
