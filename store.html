@@ -152,8 +152,8 @@
       </figure>
     </div>
 
-    <!--Javascript to manage tabs (from W3Schools.com)-->
     <script>
+      //function to mangae tabs (from W3Schools.com)
       function openStore(evt, tabName) {
         var i, tabcontent, tablinks;
         tabcontent = document.getElementsByClassName("tabcontent");
@@ -220,6 +220,7 @@
     var loc = window.location;
     if ("pushState" in history) {
       history.pushState("", document.title, loc.pathname + loc.search);
+    } else {
       loc.hash = "";
   }
   </script>
