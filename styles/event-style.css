@@ -36,16 +36,16 @@ h2, h3 {
 
 .house-games {
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
+}
+
+.house-games ul {
+  display: inline-block;
 }
 
 /*For responsive Layout*/
 @media (max-width: 650px) {
   .events, .house-games {
     flex-flow: column;
-  }
-  
-  footer {
-    flex-direction: column;
   }
 }
