@@ -12,7 +12,8 @@
 
 
 .links-nostore div {
-  flex-basis: 50%;
+  flex-basis: 40%;
+  margin: 5%;
 }
 
 .links-nostore h2, .links-store h2, .links-store h3 {
@@ -35,7 +36,7 @@
 }
 
 /*position store links above their respective images*/
-.links-store h3, .events-link h2 {
+.links-store h3, .links-nostore h2 {
   position: relative;
   color: rgb(255, 255, 255);
 }
@@ -44,6 +45,7 @@
   width: 100%;
   height: auto;
   position: relative;
+  z-index: 0;
 }
 
 .links-nostore h2{
