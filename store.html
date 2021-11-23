@@ -55,7 +55,7 @@
     <div class="tab">
       <button class="tablinks" onclick="openStore(event,'Board')">Board Games</button>
       <button class="tablinks" onclick="openStore(event,'Cards')">MTG Cards</button>
-      <button class="tablinks" onclick="openStore(event,'Other')">Other Game Products</button>
+      <button class="tablinks" onclick="openStore(event,'Accessories')">Accessories</button>
     </div>
 
     <div id="Board" class="tabcontent">
@@ -127,8 +127,8 @@
       </figure>
     </div>
 
-    <div id="Other" class="tabcontent">
-      <h2>Other Game Products</h2>
+    <div id="Accessories" class="tabcontent">
+      <h2>Accessories</h2>
       <figure>
         <img src="images/TombOfAnnil-TrapsSet.jpg" width=100>
         <figcaption>Icons of the Realms Tomb of Annihliation:
@@ -214,8 +214,8 @@
       openDefault('Board');
     } else if (window.location.hash === "#cards") {
       openDefault('Cards');
-    } else if (window.location.hash === "#other") {
-      openDefault('Other');
+    } else if (window.location.hash === "#accessories") {
+      openDefault('Accessories');
     }
 
     //Remove hash from address
