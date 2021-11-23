@@ -22,6 +22,7 @@
   flex-basis: 40%;
 }
 
+/* z-index used to ensure text displays above images for page links */
 .links-nostore h2, .links-store h2, .links-store h3 {
   text-align: center;
   z-index: 1;

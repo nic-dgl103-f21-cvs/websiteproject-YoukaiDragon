@@ -3,7 +3,8 @@ main {
   flex-direction: column;
 }
 
-h1 {
+/* align-self not needed for table */
+h1, .note {
   align-self: center;
 }
 
@@ -19,9 +20,3 @@ caption {
 }
 
 .menu section { padding: 0 1%; }
-
-/*Align note at bottom of menu*/
-.note {
-  align-self: center;
-  text-align: right;
-}

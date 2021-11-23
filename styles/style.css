@@ -7,6 +7,11 @@ body {
 
 h1, h2, h3 { font-family: Volkhov, serif; }
 
+/* Remove underlines from all links */
+a {
+  text-decoration: none;
+}
+
 /* Main website Colours */
 body { 
   background-color: rgb(131, 96, 44);
@@ -46,15 +51,11 @@ nav a {
   font-weight: bold;
 }
 
-a {
-  text-decoration: none;
-}
-
 nav a:hover {
   color: orange;
 }
 
-/*hide icons for responsive nav bar by default*/
+/* hide icons for responsive nav bar by default */
 .toggle, .menu-label {
   display: none;
 }
@@ -73,14 +74,11 @@ footer {
   justify-content: space-around;
 }
 
+/* Vertical list of nav links in footer */
 .footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
-}
-
-footer a {
-  text-decoration: none;
 }
 
 .facebook, .contact {
@@ -92,7 +90,7 @@ footer a {
   height: 150px;
 }
 
-/*For responsive nav bar*/
+/* For responsive nav bar and footer*/
 @media (max-width: 650px) {
   nav .toggle, nav .menu-label {
     display: flex;

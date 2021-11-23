@@ -19,11 +19,6 @@ h2, h3 {
   text-align: center;
 }
 
-.house-games ul {
-  padding-left: 60px;
-  columns: 2;
-}
-
 .register {
   margin-left: 10%;
   padding: 20px;
@@ -45,6 +40,8 @@ h2, h3 {
 
 .house-games ul {
   display: inline-block;
+  padding-left: 60px;
+  columns: 2;
 }
 
 /*For responsive Layout*/
