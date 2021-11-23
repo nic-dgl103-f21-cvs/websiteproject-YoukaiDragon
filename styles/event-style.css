@@ -52,4 +52,9 @@ h2, h3 {
   .events, .house-games {
     flex-flow: column;
   }
+
+  .register {
+    width: 80%;
+    margin: 0 auto;
+  }
 }
