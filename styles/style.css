@@ -1,4 +1,4 @@
-/*Size text and set main font families*/
+/* Size text and set main font families */
 html { font-size: 62.5%; }
 body { 
   font-size: 1.6rem;
@@ -7,16 +7,16 @@ body {
 
 h1, h2, h3 { font-family: Volkhov, serif; }
 
-/*Main website Aesthetics*/
+/* Main website Colours */
 body { 
   background-color: rgb(131, 96, 44);
 }
 
-/*Header and footer rules*/
 header, nav {
   background-color: rgb(255,255,255);
 }
 
+/* Position Icon and nav bar */
 header {
   display: flex;
   align-items: center;
@@ -67,6 +67,7 @@ nav a:hover {
 footer {
   background-color: white;
   margin-top: 10px;
+  padding: 20px;
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
