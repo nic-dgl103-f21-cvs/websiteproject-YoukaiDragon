@@ -10,11 +10,18 @@
   justify-content: center;
 }
 
-.links-store img, .links-nostore img {
+.links-nostore img, .links-store img {
   width: 100%;
-  height: auto;
   position: relative;
   z-index: 0;
+}
+
+.links-nostore img {
+  max-height: 235px;
+}
+
+.links-store img {
+  max-height: 225px;
 }
 
 
