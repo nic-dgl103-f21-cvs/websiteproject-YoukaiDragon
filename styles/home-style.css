@@ -39,10 +39,14 @@
   margin-top: 20px;
   border: 2px solid black;
   background-color: rgba(173, 101, 60, 0.637);
+  /* flex display used to ensure clickable area of link is contained to button */
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* Set width and height so entire background is clickable */
-.regsiter a {
+.register a {
   width: 100%;
   height: 100%;
 }
