@@ -14,11 +14,15 @@ a {
 
 /* Main website Colours */
 body { 
-  background-color: rgb(131, 96, 44);
+  background-color: rgb(117, 86, 40);
+  color: rgb(255, 255, 255);
 }
 
-header, nav {
-  background-color: rgb(255,255,255);
+header, footer {
+  color: black;
+  background-color: rgb(243, 243, 243);
+  border: 2px solid black;
+  border-radius: 25px;
 }
 
 /* Position Icon and nav bar */
@@ -52,7 +56,7 @@ nav a {
 }
 
 nav a:hover {
-  color: orange;
+  color: rgb(255, 173, 22);
 }
 
 /* hide icons for responsive nav bar by default */
@@ -66,7 +70,6 @@ nav a:hover {
 }
 
 footer {
-  background-color: white;
   margin-top: 10px;
   padding: 20px;
   display: flex;

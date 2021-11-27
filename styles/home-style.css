@@ -2,6 +2,11 @@
     text-align: center;
 }
 
+/* highlight link text */
+a:hover h2, a:hover h3 {
+  color: rgb(255, 173, 22);
+}
+
 .links-nostore {
   width: 80%;
   margin: 0 auto;
@@ -38,6 +43,7 @@
 .register {
   margin-top: 20px;
   border: 2px solid black;
+  border-radius: 10px;
   background-color: rgba(173, 101, 60, 0.637);
   /* flex display used to ensure clickable area of link is contained to button */
   display: flex;
