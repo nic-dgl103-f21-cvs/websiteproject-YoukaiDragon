@@ -1,6 +1,7 @@
 h1, #featured h2 {
   text-align: center;
 }
+
 /* Featured item section */
 #featured {
   width: 90%;
@@ -74,7 +75,7 @@ h2, .tabcontent p {
   flex-basis: 18%;
 }
 
-.tabcontent img{
+.tabcontent img {
   width: auto;
   max-width: 100%;
   max-height: 250px;

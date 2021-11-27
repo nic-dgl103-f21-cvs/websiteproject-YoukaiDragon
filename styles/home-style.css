@@ -1,5 +1,5 @@
 .intro {
-    text-align: center;
+  text-align: center;
 }
 
 /* highlight link text */
@@ -58,10 +58,10 @@ a:hover h2, a:hover h3 {
 }
 
 .register:hover {
-  background-color:orange;
+  background-color: orange;
 }
 
-.links-store > div{
+.links-store>div {
   display: flex;
   justify-content: center;
 }
@@ -76,7 +76,7 @@ a:hover h2, a:hover h3 {
   color: rgb(255, 255, 255);
 }
 
-.events-link h2, .menu-link h2{
+.events-link h2, .menu-link h2 {
   top: 20%;
 }
 

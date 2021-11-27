@@ -1,11 +1,16 @@
 /* Size text and set main font families */
-html { font-size: 62.5%; }
-body { 
-  font-size: 1.6rem;
-  font-family: Arimo, sans-serif; 
+html {
+  font-size: 62.5%;
 }
 
-h1, h2, h3 { font-family: Volkhov, serif; }
+body {
+  font-size: 1.6rem;
+  font-family: Arimo, sans-serif;
+}
+
+h1, h2, h3 {
+  font-family: Volkhov, serif;
+}
 
 /* Remove underlines from all links */
 a {
@@ -13,7 +18,7 @@ a {
 }
 
 /* Main website Colours */
-body { 
+body {
   background-color: rgb(117, 86, 40);
   color: rgb(255, 255, 255);
 }
@@ -37,7 +42,9 @@ header nav {
   justify-content: space-between;
 }
 
-header a img {width: 100px;}
+header a img {
+  width: 100px;
+}
 
 nav ul {
   display: flex;
@@ -89,7 +96,7 @@ footer {
   justify-content: space-around;
 }
 
- .contact {
+.contact {
   align-self: center;
 }
 

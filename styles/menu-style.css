@@ -19,4 +19,6 @@ caption {
   font-weight: bold;
 }
 
-.menu section { padding: 0 1%; }
+.menu section {
+  padding: 0 1%;
+}
