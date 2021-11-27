@@ -20,13 +20,21 @@ h2, h3 {
 }
 
 .register {
+  display: inline-block;
   margin-left: 10%;
-  padding: 20px;
-  font-size: 2.6rem;
-  font-weight: bold;
-  width: 20%;
+  width: 30%;
   background-color: gray;
   border: 2px solid black;
+}
+
+.register a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+
+.register:hover {
+  background-color: orange;
 }
 
 .register a:hover {
