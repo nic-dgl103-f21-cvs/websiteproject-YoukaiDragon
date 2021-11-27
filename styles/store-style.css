@@ -2,6 +2,12 @@ h1, #featured h2 {
   text-align: center;
 }
 
+.price {
+  font-weight: bold;
+  text-align: left;
+  align-self: flex-start;
+}
+
 /* Featured item section */
 #featured {
   width: 90%;
@@ -19,6 +25,11 @@ h1, #featured h2 {
 h2, .tabcontent p {
   text-align: center;
   flex-basis: 100%;
+}
+
+figure {
+  display: flex;
+  flex-direction: column;
 }
 
 #featured figure {
@@ -68,7 +79,6 @@ h2, .tabcontent p {
   max-height: 1000px;
   overflow: auto;
   flex-wrap: wrap;
-  justify-content: center;
 }
 
 .tabcontent figure {
