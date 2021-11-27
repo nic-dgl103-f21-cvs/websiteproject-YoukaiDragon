@@ -74,6 +74,11 @@ footer {
   justify-content: space-around;
 }
 
+.disclaimer {
+  text-align: center;
+  font-style: italic;
+}
+
 /* Vertical list of nav links in footer */
 .footer-nav {
   display: flex;
