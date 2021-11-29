@@ -21,17 +21,17 @@ a:hover h2, a:hover h3 {
   z-index: 0;
 }
 
+/* max heights for link sections set separatetly to minimize distortion of images */
 .links-nostore img {
   max-height: 235px;
 }
 
-.links-store img {
-  max-height: 225px;
-}
-
-
 .links-nostore div {
   flex-basis: 40%;
+}
+
+.links-store img {
+  max-height: 225px;
 }
 
 /* z-index used to ensure text displays above images for page links */
