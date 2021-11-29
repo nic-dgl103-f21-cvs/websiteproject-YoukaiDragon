@@ -91,7 +91,7 @@ footer {
 }
 
 /* Vertical list of nav links in footer */
-.footer-nav {
+#footer-nav {
   display: flex;
   flex-direction: column;
   justify-content: space-around;
