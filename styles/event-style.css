@@ -1,9 +1,5 @@
-h1, main>h2 {
+h1, h2, h3 {
   text-align: center;
-}
-
-h2, h3 {
-  padding-left: 60px;
 }
 
 .events {
@@ -62,6 +58,6 @@ h2, h3 {
   }
 
   .register {
-    width: 80%;
+    width: 85%;
   }
 }
