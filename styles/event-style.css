@@ -8,7 +8,7 @@ h1, h2, h3 {
 }
 
 .schedule {
-  flex-basis: 40%;
+  flex-basis: 45%;
 }
 
 .schedule p {
@@ -50,8 +50,11 @@ h1, h2, h3 {
   columns: 2;
 }
 
-/*For responsive Layout*/
-@media (max-width: 650px) {
+/*
+  For responsive Layout
+  1 section used here because layout shifts, but does not break, going from medium to large screens
+*/
+@media (max-width: 600px) {
   .events, .house-games {
     flex-flow: column;
     align-items: center;

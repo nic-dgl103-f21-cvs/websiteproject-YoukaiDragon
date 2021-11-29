@@ -40,6 +40,7 @@ header nav {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  width: 100%;
 }
 
 header a img {
@@ -57,7 +58,7 @@ nav ul {
 }
 
 nav a {
-  padding: 40px;
+  padding: 10px;
   font-size: 2rem;
   font-weight: bold;
 }
@@ -105,16 +106,18 @@ footer {
   height: 150px;
 }
 
-/* For responsive nav bar and footer*/
-@media (max-width: 650px) {
+/* 
+  For responsive nav bar and footer
+  2 breakpoints (600 px and 660 px) are used because header and footer
+  break at different widths
+*/
+@media (max-width: 660px) {
   nav .toggle, nav .menu-label {
     display: flex;
     align-self: center;
   }
 
   nav .toggle {
-    position: absolute;
-    margin-left: 55%;
     cursor: pointer;
   }
 
@@ -126,11 +129,13 @@ footer {
 
   #nav-items a {
     padding: 0;
-    font-size: 1.65rem;
+    font-size: 2.2rem;
   }
-
+}
+@media (max-width: 600px) {
   footer {
     flex-direction: column;
+    margin-left: 5px;
   }
 
   iframe {
