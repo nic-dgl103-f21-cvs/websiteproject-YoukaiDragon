@@ -5,7 +5,7 @@
 }
 
 /* highlight link text */
-a:hover h2, a:hover h3 {
+#links-nostore a:hover h2, #links-store a:hover h3 {
   color: rgb(255, 173, 22);
 }
 
